@@ -21,10 +21,6 @@ body{
 
 }
 
-.box:hover{
-    color: blueviolet;
-
-}
 
 .box img {
     width: 900px;
@@ -44,9 +40,6 @@ body{
     width: 900px;
     height: 800px;
 }
-
-
-
 
 
 
