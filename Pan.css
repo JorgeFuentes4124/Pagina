@@ -19,23 +19,36 @@ body{
     overflow: hidden;
     transition: width 0.5s, height 0.5s;
 
-
 }
 
 .box:hover{
-    background-color: aqua;
+    background-color: black;
     color: blueviolet;
 
 }
 
 .box img {
-    width: 200px;
+    width: 900px;
     height: 800px;
     display: block;
     margin: auto;
     transition: width 0.5s, height 0.5s;
-
 }
+
+.box:hover {
+    width: 900px;
+    height: 800px;
+}
+
+.box:hover img {
+    width: 900px;
+    height: 800px;
+}
+
+
+
+
+
 
 
 
