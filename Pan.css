@@ -1,47 +1,54 @@
-
-
-body{
+body {
     padding: 10px;
-    margin:  10px;
+    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #f0f0f0; /* Color de fondo suave para destacar los elementos */
+    font-family: 'Roboto', sans-serif; /* Fuente de Google Fonts */
 }
 
-.box{
+.box {
     margin: 15px;
-    padding: 0px;
+    padding: 0;
     border-radius: 35px;
-    width: 125px;
-    height: 800px;
+    width: 125px; /* Tamaño inicial del contenedor */
+    height: 800px; /* Tamaño inicial del contenedor */
     overflow: hidden;
-    transition: width 0.5s, height 0.5s;
-    
-
+    position: relative; /* Necesario para posicionar el texto absolutamente dentro del contenedor */
+    transition: width 0.5s, height 0.5s; /* Transiciones para transformación de tamaño */
 }
-
 
 .box img {
-    width: 900px;
-    height: 800px;
+    width: 100%; /* Ajusta la imagen al tamaño del contenedor */
+    height: 100%; /* Ajusta la imagen al tamaño del contenedor */
     display: block;
-    margin: auto;
+    object-fit: cover; /* Mantiene la proporción de la imagen sin distorsionar */
     border-radius: 35px;
-    transition: width 0.5s, height 0.5s;
+    transition: width 0.5s, height 0.5s; /* Transiciones para transformación de tamaño */
 }
 
 .box:hover {
-    width: 900px;
-    height: 800px;
+    width: 900px; /* Tamaño ampliado del contenedor al hacer hover */
+    height: 800px; /* Tamaño ampliado del contenedor al hacer hover */
 }
 
 .box:hover img {
-    width: 900px;
-    height: 800px;
+    width: 900px; /* Tamaño ampliado de la imagen al hacer hover */
+    height: 800px; /* Tamaño ampliado de la imagen al hacer hover */
 }
 
-
-
-
-
+.box h2 {
+    position: absolute;
+    bottom: 20px; /* Espacio desde la parte inferior */
+    left: 20px; /* Espacio desde el borde izquierdo */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 10px; /* Espacio interno del texto */
+    color: white; /* Color del texto */
+    font-size: 18px; /* Tamaño de fuente */
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente para el texto */
+    border-radius: 5px; /* Bordes redondeados del fondo del texto */
+    font-weight: 700; /* Negrita para el texto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Sombra de texto para mejorar la legibilidad */
+}
